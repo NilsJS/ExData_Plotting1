@@ -28,7 +28,7 @@ Sys.setlocale("LC_TIME","US")
 #open the PNG graphics device
 png(file="./plot3.png", width=480, height=480)
 
-# Create a line diagram witht he three over Energy Sub Metering variables
+# Create a line diagram with the three Energy Sub Metering variables
 plot(s$DateTime, s$Sub_metering_1, type = "l", col="black", ylab="Energy sub metering", xlab="")
 lines(s$DateTime, s$Sub_metering_2, type = "l", col="red")
 lines(s$DateTime, s$Sub_metering_3, type = "l", col="blue")
